@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -36,39 +36,53 @@
                         <state key="normal" title="Button" image="like_none"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HS-ge-8TT">
-                        <rect key="frame" x="80" y="669.5" width="40" height="21"/>
+                        <rect key="frame" x="80" y="673" width="40" height="14.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="y7c-69-vek"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2s-t3-VqF">
-                        <rect key="frame" x="30" y="700.5" width="589" height="461.5"/>
+                        <rect key="frame" x="30" y="697.5" width="589" height="464.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbN-UH-HYQ">
-                        <rect key="frame" x="130" y="669.5" width="489" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="250" y="673" width="369" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qJ-OU-7Va">
+                        <rect key="frame" x="130" y="666.5" width="110" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="1gW-5Y-TIB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="コメントする...">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                    </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="9qJ-OU-7Va" firstAttribute="leading" secondItem="8HS-ge-8TT" secondAttribute="trailing" constant="10" id="3ct-ku-UEs"/>
                     <constraint firstItem="8HS-ge-8TT" firstAttribute="leading" secondItem="Yis-hl-exf" secondAttribute="trailing" constant="10" id="7Pg-Bz-9OK"/>
                     <constraint firstAttribute="trailingMargin" secondItem="dbN-UH-HYQ" secondAttribute="trailing" constant="10" id="FL4-JD-XZV"/>
                     <constraint firstItem="Loy-Fe-Qyc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Idl-O3-2HJ"/>
                     <constraint firstItem="dbN-UH-HYQ" firstAttribute="centerY" secondItem="Yis-hl-exf" secondAttribute="centerY" id="PDU-ln-c5f"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Loy-Fe-Qyc" secondAttribute="trailing" id="PiK-mu-JoU"/>
                     <constraint firstItem="Yis-hl-exf" firstAttribute="top" secondItem="Loy-Fe-Qyc" secondAttribute="bottom" constant="10" id="Prk-5H-oAC"/>
-                    <constraint firstItem="dbN-UH-HYQ" firstAttribute="leading" secondItem="8HS-ge-8TT" secondAttribute="trailing" constant="10" id="RUe-zn-P8p"/>
                     <constraint firstAttribute="trailingMargin" secondItem="R2s-t3-VqF" secondAttribute="trailing" constant="10" id="SRF-Up-R3v"/>
                     <constraint firstItem="Yis-hl-exf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Svh-lL-qev"/>
                     <constraint firstItem="Loy-Fe-Qyc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="VTx-Db-b7K"/>
                     <constraint firstItem="R2s-t3-VqF" firstAttribute="top" secondItem="8HS-ge-8TT" secondAttribute="bottom" constant="10" id="cxV-1T-sfv"/>
+                    <constraint firstItem="dbN-UH-HYQ" firstAttribute="centerY" secondItem="Yis-hl-exf" secondAttribute="centerY" id="dkG-UZ-jOS"/>
+                    <constraint firstItem="dbN-UH-HYQ" firstAttribute="centerY" secondItem="Yis-hl-exf" secondAttribute="centerY" id="fNj-oP-w7F"/>
+                    <constraint firstItem="9qJ-OU-7Va" firstAttribute="centerY" secondItem="Yis-hl-exf" secondAttribute="centerY" id="oKj-nc-a8A"/>
+                    <constraint firstItem="dbN-UH-HYQ" firstAttribute="leading" secondItem="9qJ-OU-7Va" secondAttribute="trailing" constant="10" id="oMQ-JQ-6ew"/>
                     <constraint firstItem="8HS-ge-8TT" firstAttribute="centerY" secondItem="Yis-hl-exf" secondAttribute="centerY" id="p0d-Yh-Pfd"/>
                     <constraint firstAttribute="bottomMargin" secondItem="R2s-t3-VqF" secondAttribute="bottom" constant="10" id="sbR-3p-aYc"/>
                     <constraint firstItem="R2s-t3-VqF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="taJ-sV-SvM"/>
@@ -77,6 +91,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="captionLabel" destination="R2s-t3-VqF" id="7nu-Sc-jyq"/>
+                <outlet property="commentButton" destination="9qJ-OU-7Va" id="dZx-5E-qYE"/>
+                <outlet property="commetButton" destination="9qJ-OU-7Va" id="uyp-em-DcK"/>
                 <outlet property="dateLabel" destination="dbN-UH-HYQ" id="eNv-HB-560"/>
                 <outlet property="likeButton" destination="Yis-hl-exf" id="0XA-pG-Tez"/>
                 <outlet property="likeLabel" destination="8HS-ge-8TT" id="BoG-0w-rga"/>
